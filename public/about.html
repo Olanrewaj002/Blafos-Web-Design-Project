@@ -5,62 +5,149 @@
            <meta charset="UTF-8">
            <meta name="viewport" content="width=device-width, initial-scale=1.0">
            <title>Document</title>
-           <link href="./output.css" rel="stylesheet">
+           <link href="output.css" rel="stylesheet">
        
        </head>
        
-       <body class="bg-black">
+       <body class=" h-screen m-0 p-0">
 
-         <!--Nav bar-->
-
-         <div class="px-5 py2 flex items-center justify-between bg-transparent rounded-b-lg">
-       
-            <div>
-                <img class="w-24 h-24"  src="Images/Bla logo bg.png">
-            </div>
-
-            <div class="flex items-center space-x-12">
-                    <a href="index.html" class=" font-extralight  text-white hover:bg-zinc-200 bg-opacity-0 px-6 py-2 rounded-sm">Home</a>
-                    <a href="#" class="font-semibold text-orange-800 hover:bg-zinc-200 px-6 py-2 rounded-sm ">About us</a>
-                    <a href="articles.html" class="font-extralight  text-white hover:bg-zinc-200 px-6 py-2 rounded-sm">Articles</a>
-
+        <header class="bg-slate-700 py-1 lg:py-2">
+            <nav class="flex items-center justify-between px-5 h-16 lg:gap-20">
+                <a href="index.html"><img class="h-16 w-16 whitespace-nowrap" src="Images/Bla logo bg.png"></a>
+        
+                <div class="dropdown absolute -top-full z-10 max-lg:bg-slate-700 left-0 w-full flex flex-col gap-6 items-center py-4 text-lg font-bold
+                lg:static lg:flex-row justify-between">    
+                    <ul class="flex flex-col items-center gap-6 text-slate-200 lg:flex-row lg:gap-12 text-sm">
+                        <a class="hover:text-slate-500 " href="index.html">Home</a>
+                        <a class="hover:text-slate-500 text-yellow-700 text-base font-bold" href="about.html">About us</a>
+                        <a class="hover:text-slate-500" href="services.html">Services</a>
+                        <a class="hover:text-slate-500" href="contact.html">Contact us</a>
+                    </ul>
+        
                     <div>
-                        <button type="button" class="py-4 px-8 border border-yellow-700 text-white rounded-md text-[16px]">Get In Touch</button>
+                        <a href="contact.html"><button class="py-4 px-8 bg-slate-900 rounded-sm font-semibold text-slate-300 hover:text-slate-300">Book Consultation</button></a>
                     </div>
+                </div>
+        
+                <div class="togglebutton lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>    
+                </div>
+            </nav>
+        </header>
+        
+
+
+        <!--Thae about section-->
+       <div class="relative top-12 grid grid-flow-row gap-4 px-5">
+            <div>
+                <h1 class="text-2xl lg:text-4xl font-black text-slate-700">
+                    About Us
+                </h1>
             </div>
-
-           
-        </div>
-
-
-       <div class="relative top-20 px-5 grid grid-flow-row gap-4 items-center">
-       
-        <div>
-            <h1 class="text-6xl font-black text-slate-300 text-center">
-                We set out to facilitate the law with<br> regards to best practices
-            </h1>
-        </div>
        </div>
 
-       <div class="relative flex justify-center px-40 top-32">      
-        <h4 class="text-slate-500 font-thin text-[24px] relative leading-12 text-center">
-           <span class="font-semibold text-orange-800">BLAFOS PARTNERS </span> is a dynamic, client-focused law firm in Nigeria, dedicated to delivering expert legal services across various practice areas.Our experienced team of lawyers is committed to providing practical, innovative solutions tailored to meet the unique needs of our clients, ranging from individuals and SMEs to large corporations and institutions.<br><br>
-            With a deep understanding of the Nigerian legal landscape and international best practices, we offer comprehensive services in corporate law, dispute resolution, regulatory compliance, intellectual property, and more.<br><br> Our focus on professionalism, integrity, and excellence ensures that we consistently exceed our clients' expectations.
-            At <span class="font-semibold text-orange-800">BLAFOS PARTNERS </span>, we believe in building lasting relationships founded on trust, transparency, and a results-driven approach.
-        </h4>
+       
+
+       <div class="relative top-20 px-5 grid grid-flow-row gap-8 lg:flex ">
+
+            <div class="relative flex justify-center">
+                <img src="Images/Bla 2.jpeg" class="w-[60em] h-[14em] lg:w-[120em] lg:h-[24em] opacity-80 rounded-md relative">
+            </div>
+            
+            <div class="grid grid-flow-row gap-4">
+                <h4 class="text-slate-950 font-thin lg:font-normal text-lg relative leading-12">
+                    <span class="font-semibold text-orange-800">BLAFOS PARTNERS </span> is a dynamic, client-focused law firm in Nigeria, dedicated to delivering expert legal services across various practice areas. Our experienced team of lawyers is committed to providing practical, innovative solutions tailored to meet the unique needs of our clients, ranging from individuals and SMEs to large corporations and institutions.<br><br>
+                    With a deep understanding of the Nigerian legal landscape and international best practices, we offer comprehensive services in corporate law, dispute resolution, regulatory compliance, intellectual property, and more.<br><br> Our focus on professionalism, integrity, and excellence ensures that we consistently exceed our clients' expectations.
+                    At <span class="font-semibold text-orange-800">BLAFOS PARTNERS </span>, we believe in building lasting relationships founded on trust, transparency, and a results-driven approach.
+                </h4>
+
+                <div>
+                    <a href="contact.html"><button class="py-4 px-8 bg-slate-900 rounded-sm font-semibold text-slate-300 hover:text-slate-300">Book Consultation</button></a>
+                </div>
+            </div>
+        
         </div>
 
-        <div class="relative flex justify-center top-60 ">
-            <img src="Images/Bla 2.jpeg" class="w-[800px] h-[420px] opacity-80 rounded-md relative">
-        </div>
+    <!--Footer-->
+    <div class="relative grid grid-flow-row  bg-slate-900 py-6 top-60 lg:top-80">
+        <div class="relative grid grid-flow-row gap-8">
+            <div class="relative px-5">
+                <a href="index.html"><img class="h-16 w-16 whitespace-nowrap" src="Images/Bla logo bg.png"></a>
+            </div>
+
+            <div class="relative grid grid-flow-row gap-8 py-4"> 
+                <div class="relative px-5 flex items-center">
+                    <div class="w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>     
+                    </div>
+
+                    <div>
+                        <h2 class="text-yellow-700 text-xs">
+                            Suite 307, AHCN Towers, CIPM Avenue,<br> Alausa,
+                            Ikeja, Lagos state, Nigeria
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="relative px-5 flex items-center">
+                    <div class="w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                          </svg>                    
+                    </div>
+        
+                    <div>
+                        <h2 class=" text-yellow-700 text-xs w-fit">
+                           +234-9027366014
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="relative px-5 flex items-center">
+                    <div class="w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>                                     
+                    </div>
+        
+                    <div>
+                        <h2 class="text-yellow-700 text-xs">
+                           info@blafospartners.com
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+     <!--copyright-->
+     <div class="relative  bg-slate-900 py-2 top-60 lg:top-[304px]">
+        <h3 class="font-bold text-xs items-center px-5 text-slate-400">
+            Copyright @ Blafos Partners 2024
+        </h3>
+    </div>
 
 
-         <!--footer-->
-         <div class="relative flex justify-center bg-slate-300 top-128 items-center py-2">
-            <h3 class="font-bold text-sm items-center">
-                Copyright @ Blafos Partners 2024
-            </h3>
-        </div>
+
+
+    <script>
+
+        // Select the toggle button and the dropdown menu
+        const toggleButton = document.querySelector('.togglebutton');
+        const dropdownMenu = document.querySelector('.dropdown');
+
+        // Add an event listener to the toggle button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the visibility class for the dropdown menu
+            dropdownMenu.classList.toggle('top-16');
+        });
+
+    </script>
 
     </body>
    </html> 
